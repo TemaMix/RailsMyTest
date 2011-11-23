@@ -1,0 +1,16 @@
+<h1>Listing posts</h1>
+<table>
+	<tr>
+		<td>commenter</td>
+		<td>body</td>
+	</tr>
+
+<% comments.each do |comment| %>
+	<tr>
+		<td><%= comment.commenter %></td>
+		<td><%= comment.body %></td>
+	</tr>	
+
+<%end%>
+
+</table>

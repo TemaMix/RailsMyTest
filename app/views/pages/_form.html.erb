@@ -1,0 +1,9 @@
+<%= form_for page do |f| %>
+  <%= f.error_pages %>
+  <%= f.hidden_field :parent_id %>
+  <p>
+    <%= f.label :content, "Имя страницы" %><br />
+    <%= f.text_field :name  %>
+  </p>
+  <p><%= f.submit "Добавить имя" %></p>
+<% end %>

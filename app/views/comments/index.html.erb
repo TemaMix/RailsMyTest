@@ -1,0 +1,9 @@
+<h1>Listing posts</h1>
+<table>
+	<tr>
+		<td>commenter</td>
+		<td>body</td>
+	</tr>
+<%= render :partial => "comments/comments", :locals => {:comments => @comments } %>
+
+</table>

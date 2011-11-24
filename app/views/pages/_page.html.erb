@@ -1,10 +1,7 @@
 <div class="page">
   <div class="created_at"><%= page.created_at.strftime("%B %d, %Y") %></div>
   <div class="page-name">
-    <%= link_to page.name, page %>
+    <%=  page.title %>
   </div>
-  <div class="actions">
-    <%= link_to "Reply", new_page_path(:parent_id => page) %> |
-    <%= link_to "Destroy", page, :confirm => "Are you sure?", :method => :delete %>
-  </div>
+  
 </div>

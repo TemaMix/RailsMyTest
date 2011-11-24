@@ -1,7 +1,1 @@
-<h1>This is home page!</h1>
-<p></p>
-
-<%= # render :partial => "comments/comments", :locals => {:comments => @comments } %>
-
-<%= nested_pages @page.subtree.arrange(:order => :created_at) %>
-<%= render :partial => "pages/form", :locals => {:page => @page} %>
+<%= nested_pages @pages.arrange(:order => :created_at)%>

@@ -1,11 +1,12 @@
 class PagesController < ApplicationController
   def home
-    @comments=Comment.all
-    @page = Page.all
+    @comments = Comment.all
+    @pages = Page.scoped
   end
 
   def index
-    @page = Page.all
+    
+    @page = Page.scoped
   end
 
   def show
